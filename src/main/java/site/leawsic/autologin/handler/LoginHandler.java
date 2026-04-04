@@ -70,7 +70,7 @@ public class LoginHandler {
             AutoLogin.LOGGER.info("Auto-login triggered for server {}", serverAddress);
             MinecraftClient client = MinecraftClient.getInstance();
             if (client.player != null) {
-                client.player.networkHandler.sendCommand("/login " + password);
+                client.player.networkHandler.sendChatCommand("login " + password);
             }
         }
     }
