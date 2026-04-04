@@ -1,0 +1,15 @@
+{
+    "text.autoconfig.autologin.title": "自动登录配置",
+    "text.autoconfig.autologin.option.enabled": "启用自动登录",
+    "text.autoconfig.autologin.option.defaultPassword": "默认密码",
+    "text.autoconfig.autologin.option.defaultPassword.@Tooltip": "当没有为服务器单独设置密码时使用",
+    "text.autoconfig.autologin.option.triggerPattern": "登录触发正则",
+    "text.autoconfig.autologin.option.triggerPattern.@Tooltip": "用于检测登录请求消息的正则表达式",
+    "text.autoconfig.autologin.option.successPattern": "登录成功检测正则",
+    "text.autoconfig.autologin.option.successPattern.@Tooltip": "用于检测已登录成功的正则表达式",
+    "text.autoconfig.autologin.option.serverPasswords": "服务器密码列表",
+    "text.autoconfig.autologin.option.serverPasswords.@Tooltip": "为服务器特别设置密码\n在服务器里使用/autologin set <password>设置密码",
+    "text.autoconfig.autologin.option.ServerPasswordEntry": "服务器密码",
+    "text.autoconfig.autologin.option.ServerPasswordEntry.server": "服务器地址 无端口",
+    "text.autoconfig.autologin.option.ServerPasswordEntry.password": "密码"
+}

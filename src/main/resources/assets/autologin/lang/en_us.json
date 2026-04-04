@@ -1,0 +1,15 @@
+{
+    "text.autoconfig.autologin.title": "AutoLogin Config",
+    "text.autoconfig.autologin.option.enabled": "Enable AutoLogin",
+    "text.autoconfig.autologin.option.defaultPassword": "Default Password",
+    "text.autoconfig.autologin.option.defaultPassword.@Tooltip": "Password used when no server-specific password is set",
+    "text.autoconfig.autologin.option.triggerPattern": "Login Trigger Pattern",
+    "text.autoconfig.autologin.option.triggerPattern.@Tooltip": "Regex pattern to detect login request messages",
+    "text.autoconfig.autologin.option.successPattern": "Success Detection Pattern",
+    "text.autoconfig.autologin.option.successPattern.@Tooltip": "Regex pattern to detect successful login",
+    "text.autoconfig.autologin.option.serverPasswords": "Sever Passwords List",
+    "text.autoconfig.autologin.option.serverPasswords.@Tooltip": "Set password for specific server\nUse /autologin set <password> in server",
+    "text.autoconfig.autologin.option.ServerPasswordEntry": "Server password",
+    "text.autoconfig.autologin.option.ServerPasswordEntry.server": "Server address (without port)",
+    "text.autoconfig.autologin.option.ServerPasswordEntry.password": "Password"
+}
