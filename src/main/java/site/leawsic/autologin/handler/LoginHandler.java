@@ -31,16 +31,20 @@ public class LoginHandler {
     public void register() {
         if (listening) return;
         listening = true;
+        ClientReceiveMessageEvents.GAME.register((message, overlay) -> {
+            if (!listening) return;
+            onChatMessage(message);
+        });
         ClientReceiveMessageEvents.CHAT.register((message, signedMessage, sender, params, receptionTimestamp) -> {
             if (!listening) return;
             onChatMessage(message);
         });
-        AutoLogin.LOGGER.debug("Chat listener registered for {}", serverAddress);
+        AutoLogin.LOGGER.info("Chat listener registered for {}", serverAddress);
     }
 
     public void unregister() {
         listening = false;
-        AutoLogin.LOGGER.debug("Chat listener unregistered for {}", serverAddress);
+        AutoLogin.LOGGER.info("Chat listener unregistered for {}", serverAddress);
     }
 
     private void onChatMessage(Text message) {
@@ -49,7 +53,6 @@ public class LoginHandler {
         if (isLoggedIn) return;
 
         String rawMessage = message.getString();
-        AutoLogin.LOGGER.debug("Chat: {}", rawMessage);
 
         // 检查是否已登录成功
         if (successPattern.matcher(rawMessage).find()) {

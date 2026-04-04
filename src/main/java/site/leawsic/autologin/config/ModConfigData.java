@@ -20,7 +20,7 @@ public class ModConfigData implements ConfigData {
     public List<ServerPasswordEntry> serverPasswords = new ArrayList<>();
 
     @ConfigEntry.Gui.Tooltip
-    public String triggerPattern = ".*/(login|reg|register).*|.*请登录.*|.*Please login.*|.*密码.*";
+    public String triggerPattern = ".*/(login|reg|register).*|.*未登录.*|.*Please login.*|.*密码.*|.*需要登录.*";
 
     @ConfigEntry.Gui.Tooltip
     public String successPattern = ".*登录成功.*|.*Login successful.*|.*已登录.*";

@@ -36,7 +36,7 @@ public class AutoLoginClient implements ClientModInitializer {
                 String serverAddress = client.getCurrentServerEntry().address;
                 currentHandler = new LoginHandler(serverAddress);
                 currentHandler.register();
-                AutoLogin.LOGGER.debug("LoginHandler created for server: {}", serverAddress);
+                AutoLogin.LOGGER.info("LoginHandler created for server: {}", serverAddress);
             }
         });
 
@@ -45,7 +45,7 @@ public class AutoLoginClient implements ClientModInitializer {
             if (currentHandler != null) {
                 currentHandler.unregister();
                 currentHandler = null;
-                AutoLogin.LOGGER.debug("LoginHandler cleaned up");
+                AutoLogin.LOGGER.info("LoginHandler cleaned up");
             }
         });
     }
