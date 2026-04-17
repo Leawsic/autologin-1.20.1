@@ -7,6 +7,8 @@
     "text.autoconfig.autologin.option.triggerPattern.@Tooltip": "用于检测登录请求消息的正则表达式",
     "text.autoconfig.autologin.option.successPattern": "登录成功检测正则",
     "text.autoconfig.autologin.option.successPattern.@Tooltip": "用于检测已登录成功的正则表达式",
+    "text.autoconfig.autologin.option.loginCommandTemplate": "登录命令模板",
+    "text.autoconfig.autologin.option.loginCommandTemplate.@Tooltip": "发送的命令，使用%s作为密码占位符（例如 login %s或l %s）",
     "text.autoconfig.autologin.option.serverPasswords": "服务器密码列表",
     "text.autoconfig.autologin.option.serverPasswords.@Tooltip": "为服务器特别设置密码\n在服务器里使用/autologin set <password>设置密码",
     "text.autoconfig.autologin.option.ServerPasswordEntry": "服务器密码",

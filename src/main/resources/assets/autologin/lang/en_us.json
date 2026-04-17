@@ -7,6 +7,8 @@
     "text.autoconfig.autologin.option.triggerPattern.@Tooltip": "Regex pattern to detect login request messages",
     "text.autoconfig.autologin.option.successPattern": "Success Detection Pattern",
     "text.autoconfig.autologin.option.successPattern.@Tooltip": "Regex pattern to detect successful login",
+    "text.autoconfig.autologin.option.loginCommandTemplate": "Login Command Template",
+    "text.autoconfig.autologin.option.loginCommandTemplate.@Tooltip": "Command to send, use %s as placeholder for password (e.g., login %s or l %s)",
     "text.autoconfig.autologin.option.serverPasswords": "Sever Passwords List",
     "text.autoconfig.autologin.option.serverPasswords.@Tooltip": "Set password for specific server\nUse /autologin set <password> in server",
     "text.autoconfig.autologin.option.ServerPasswordEntry": "Server password",

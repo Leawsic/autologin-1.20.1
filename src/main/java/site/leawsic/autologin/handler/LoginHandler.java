@@ -44,7 +44,6 @@ public class LoginHandler {
 
     public void unregister() {
         listening = false;
-        AutoLogin.LOGGER.info("Chat listener unregistered for {}", serverAddress);
     }
 
     private void onChatMessage(Text message) {
@@ -57,7 +56,6 @@ public class LoginHandler {
         // 检查是否已登录成功
         if (successPattern.matcher(rawMessage).find()) {
             isLoggedIn = true;
-            AutoLogin.LOGGER.info("Login success detected for server {}", serverAddress);
             return;
         }
 
@@ -70,10 +68,11 @@ public class LoginHandler {
             }
 
             hasAttemptedLogin = true;
+            String command = String.format(config.loginCommandTemplate, password);
             AutoLogin.LOGGER.info("Auto-login triggered for server {}", serverAddress);
             MinecraftClient client = MinecraftClient.getInstance();
             if (client.player != null) {
-                client.player.networkHandler.sendChatCommand("login " + password);
+                client.player.networkHandler.sendChatCommand("login " + command);
             }
         }
     }

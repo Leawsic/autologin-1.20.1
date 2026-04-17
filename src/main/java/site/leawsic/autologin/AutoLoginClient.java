@@ -45,7 +45,6 @@ public class AutoLoginClient implements ClientModInitializer {
             if (currentHandler != null) {
                 currentHandler.unregister();
                 currentHandler = null;
-                AutoLogin.LOGGER.info("LoginHandler cleaned up");
             }
         });
     }

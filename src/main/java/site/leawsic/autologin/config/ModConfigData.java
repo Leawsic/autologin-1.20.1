@@ -25,6 +25,9 @@ public class ModConfigData implements ConfigData {
     @ConfigEntry.Gui.Tooltip
     public String successPattern = ".*登录成功.*|.*Login successful.*|.*已登录.*";
 
+    @ConfigEntry.Gui.Tooltip
+    public String loginCommandTemplate = "login %s";
+
     public String getPasswordForServer(String serverAddress) {
         String addr = normalizeAddress(serverAddress);
         for (ServerPasswordEntry entry : serverPasswords) {
